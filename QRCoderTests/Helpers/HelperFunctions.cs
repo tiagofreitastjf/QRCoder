@@ -50,7 +50,7 @@ namespace QRCoderTests.Helpers
         public static string GetAssemblyPath()
         {
             return
-#if NET5_0 || NET6_0
+#if NET5_0 || NET6_0 || NET7_0 || NET8_0
             AppDomain.CurrentDomain.BaseDirectory;
 #elif NET35 || NET452
             Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase).Replace("file:\\", "");

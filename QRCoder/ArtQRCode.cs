@@ -1,4 +1,4 @@
-#if NETFRAMEWORK || NETSTANDARD2_0 || NET5_0 || NET6_0_WINDOWS
+#if NETFRAMEWORK || NETSTANDARD2_0 || NET5_0 || NET6_0_WINDOWS || NET7_0 || NET8_0
 
 using System;
 using System.Drawing;

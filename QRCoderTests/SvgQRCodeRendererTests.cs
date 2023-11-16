@@ -18,7 +18,7 @@ namespace QRCoderTests
         private string GetAssemblyPath()
         {
             return
-#if NET5_0
+#if NET5_0 || NET7_0 || NET8_0
                 AppDomain.CurrentDomain.BaseDirectory;
 #else
                 Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase).Replace("file:\\", "");
